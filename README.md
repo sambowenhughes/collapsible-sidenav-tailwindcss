@@ -2,7 +2,7 @@
 
 A simple collapsible sidebar built using Tailwind CSS and Next.js.
 
-![Project Demo](https://tyhgectxutilszaayoua.supabase.co/storage/v1/object/public/misc/sidenav.gif?t=2023-08-28T02%3A46%3A36.456Z)
+![Project Demo](https://tyhgectxutilszaayoua.supabase.co/storage/v1/object/public/misc/sidenav-gif.gif?t=2023-08-28T02%3A49%3A59.903Z)
 
 ## Table of Contents
 
