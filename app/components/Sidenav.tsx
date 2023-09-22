@@ -1,14 +1,19 @@
-"use client";
+'use client'
 
+// Import necessary libraries and components
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+// Define the Sidenav component
 export default function Sidenav({ sidebarOpen, setSidebarOpen }: any) {
+  // Define state for sidebar expansion
   const [sidebarExpanded, setSidebarExpanded] = useState(false);
 
+  // Create a reference to the sidebar element
   const sidebar = useRef(null);
 
+  // Effect to add or remove a class to the body element based on sidebar expansion
   useEffect(() => {
     if (sidebarExpanded) {
       document.querySelector("body")?.classList.add("sidebar-expanded");
@@ -19,7 +24,7 @@ export default function Sidenav({ sidebarOpen, setSidebarOpen }: any) {
 
   return (
     <>
-      {/* Sidebar backdrop (mobile only) */}
+      {/* Sidebar backdrop (visible on mobile only) */}
       <div
         onClick={() => setSidebarOpen(!sidebarOpen)}
         className={`fixed inset-0 border-r border-gray-200 sm:translate-x-0 bg-opacity-30 z-40 lg:hidden lg:z-auto transition-opacity duration-200 ${

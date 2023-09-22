@@ -1,71 +1,72 @@
-# Collapsible Sidebar Project
+```markdown
+# Collapsible Sidebar App
 
-A simple collapsible sidebar built using Tailwind CSS and Next.js.
+This is a simple web application built using Next.js and Tailwind CSS that features a collapsible sidebar component.
 
-![Project Demo](https://tyhgectxutilszaayoua.supabase.co/storage/v1/object/public/misc/sidenav-gif.gif?t=2023-08-28T02%3A49%3A59.903Z)
+## Description
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Customization](#customization)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Introduction
-
-This project is a demonstration of how to create a collapsible sidebar using the Tailwind CSS framework and the Next.js framework. It showcases a basic responsive sidebar that can be expanded or collapsed, suitable for web applications requiring navigation menus.
-
-## Features
-
-- Responsive collapsible sidebar.
-- Smooth transitions and animations.
-- Next.js project structure.
+This application serves as a template for creating web applications with a collapsible sidebar. It includes responsive design and integration with Next.js and Tailwind CSS for easy customization.
 
 ## Getting Started
 
+To get started with this application, follow these steps:
+
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed on your machine.
+- Node.js and npm installed on your machine.
 
 ### Installation
 
-1. Clone the repository:
+1. Clone the repository to your local machine:
 
-   ```bash
-   git clone https://github.com/your-username/collapsible-sidebar-project.git
+   ```shell
+   git clone https://github.com/sambowenhughes/collapsible-sidebar-app.git
    ```
 
-2. Navigate to the project directory:
+2. Change to the project directory:
 
-   ```bash
-   cd collapsible-sidebar-project
+   ```shell
+   cd collapsible-sidebar-app
    ```
 
 3. Install the dependencies:
 
-   ```bash
+   ```shell
    npm install
    ```
 
-## Usage
+### Running the Application
 
-1. Start the development server:
+To run the application locally, use the following command:
 
-   ```bash
-   npm run dev
-   ```
+```shell
+npm run dev
+```
 
-2. Open your web browser and navigate to [http://localhost:3000](http://localhost:3000) to see the project in action.
+This will start a development server, and you can view the application in your web browser at `http://localhost:3000`.
+
+### Usage
+
+- Open the application in your browser to see the collapsible sidebar in action.
+- Click on the hamburger icon to expand or collapse the sidebar.
+- The sidebar responds to screen size changes and behaves differently on mobile and desktop.
+
+### Customization
+
+You can customize the application by modifying the React components and Tailwind CSS styles in the codebase. The main components to explore for customization are:
+
+- `components/Sidenav.js`: The collapsible sidebar component.
+- `components/MobileHeader.js`: The mobile header component.
+- `styles/globals.css`: Global styles and Tailwind CSS configuration.
+
+### Deployment
+
+To deploy this application to a production environment, you can use hosting platforms like Vercel, Netlify, or AWS Amplify, depending on your preferences.
 
 ## Contributing
 
-Contributions are welcome! If you find any issues or improvements, feel free to open a pull request or an issue in this repository.
+Contributions are welcome! If you'd like to contribute to this project, please follow the [Contributing Guidelines](CONTRIBUTING.md).
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.

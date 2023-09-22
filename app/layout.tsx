@@ -1,11 +1,14 @@
 "use client";
 
+// Import global styles
 import "./globals.css";
 
+// Import necessary components and hooks
 import Sidenav from "./components/Sidenav";
 import { useEffect, useState } from "react";
 import Header from "./components/MobileHeader";
 
+// Define the RootLayout component
 export default function RootLayout({
   children,
 }: {
@@ -34,18 +37,21 @@ export default function RootLayout({
       <body>
         <div className="flex h-screen bg-gray-200">
           <div>
+            {/* Render the Sidenav component */}
             <Sidenav
               sidebarOpen={sidebarOpen}
               setSidebarOpen={setSidebarOpen}
             />
           </div>
           <div className="relative flex flex-col flex-1 lg:overflow-y-auto lg:overflow-x-hidden">
+            {/* Render the Header component if in mobile mode */}
             {isMobile && (
               <Header
                 setSidebarOpen={setSidebarOpen}
                 className="sticky top-0 bg-white border-b border-slate-200 z-30"
               />
             )}
+            {/* Render the main content */}
             <main>{children}</main>
           </div>
         </div>
