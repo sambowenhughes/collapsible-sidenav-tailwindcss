@@ -1,4 +1,3 @@
-```markdown
 # Collapsible Sidebar App
 
 This is a simple web application built using Next.js and Tailwind CSS that features a collapsible sidebar component.
